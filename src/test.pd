@@ -1,0 +1,24 @@
+#N canvas 589 187 450 300 10;
+#X obj 253 93 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 253 110 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 253 127 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 234 92 X;
+#X text 234 110 Y;
+#X text 234 127 Z;
+#X obj 243 262 dac~;
+#X obj 223 185 dapannerxyz~ 1;
+#X obj 143 151 osc~ 250;
+#X obj 236 221 dadecoder~;
+#X connect 0 0 7 1;
+#X connect 1 0 7 2;
+#X connect 2 0 7 3;
+#X connect 7 0 9 0;
+#X connect 7 1 9 1;
+#X connect 7 2 9 2;
+#X connect 7 3 9 3;
+#X connect 8 0 7 0;
+#X connect 9 0 6 0;
+#X connect 9 1 6 1;
